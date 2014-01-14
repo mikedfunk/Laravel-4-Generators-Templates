@@ -1,0 +1,33 @@
+<?php
+/**
+ * @package MyPackage
+ * @copyright 2014 Internet Brands, Inc. All Rights Reserved.
+ */
+namespace My\Namespace\Here;
+
+/**
+ * {{className}}
+ *
+ * @author Michael Funk <mfunk@internetbrands.com>
+ */
+class {{className}} extends Seeder 
+{
+
+    /**
+     * execute the seeder
+     *
+     * @return void
+     */
+    public function run()
+    {
+        // Wipe the table clean before populating
+        DB::table('{{models}}')->truncate();
+
+        ${{models}} = array(
+
+        );
+
+        // Run the seeder
+        DB::table('{{models}}')->insert(${{models}});
+    }
+}

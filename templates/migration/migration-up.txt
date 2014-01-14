@@ -1,0 +1,11 @@
+    /**
+     * Migrate up to this version
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('{{tableName}}', function(Blueprint $table) {
+            {{methods}}
+        });
+    }

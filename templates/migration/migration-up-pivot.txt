@@ -1,0 +1,13 @@
+    /**
+     * Migrate up to this version
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('{{tableName}}', function(Blueprint $table) {
+            $table->increments('id');
+            {{methods}}
+        });
+    }
+

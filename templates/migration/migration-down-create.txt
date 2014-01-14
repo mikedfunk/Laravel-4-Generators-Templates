@@ -1,0 +1,13 @@
+    /**
+     * migrate down to the previous version
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::create('{{tableName}}', function(Blueprint $table) {
+            $table->increments('id');
+            {{methods}}
+            $table->timestamps();
+        });
+    }

@@ -1,0 +1,9 @@
+    /**
+     * migrate down to the previous version
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::drop('{{tableName}}');
+    }

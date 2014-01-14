@@ -1,0 +1,32 @@
+<?php
+/**
+ * @package MyPackage
+ * @copyright 2014 Internet Brands, Inc. All Rights Reserved.
+ */
+namespace My\Namespace\Here;
+
+/**
+ * {{className}}
+ *
+ * @author Michael Funk <mfunk@internetbrands.com>
+ */
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+
+class {{name}} extends Migration 
+{
+
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+{{up}}
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+{{down}}
+}

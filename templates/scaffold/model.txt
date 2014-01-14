@@ -1,0 +1,28 @@
+<?php
+/**
+ * @package MyPackage
+ * @copyright 2014 Internet Brands, Inc. All Rights Reserved.
+ */
+namespace My\Namespace\Here;
+
+/**
+ * {{className}}
+ *
+ * @author Michael Funk <mfunk@internetbrands.com>
+ */
+class {{className}} extends Eloquent {
+
+    /**
+     * which fields to allow filling
+     *
+     * @var array
+     */
+    protected $fillable = array();
+
+    /**
+     * validation rules
+     *
+     * @var array
+     */
+    public static $rules = array({{rules}});
+}
