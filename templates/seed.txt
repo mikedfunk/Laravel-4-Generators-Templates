@@ -1,33 +1,38 @@
 <?php
 /**
+ * Description
+ * Composer: "fzaninotto/faker": "v1.3.0"
+ *
  * @package MyPackage
  * @copyright 2014 Internet Brands, Inc. All Rights Reserved.
  */
 namespace My\Namespace\Here;
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Faker\Factory as Faker;
 
 /**
  * {{className}}
  *
  * @author Michael Funk <mfunk@internetbrands.com>
  */
-class {{className}} extends Seeder 
+class $CLASS$ extends Seeder
 {
 
     /**
-     * execute the seeder
+     * run seeder
      *
      * @return void
      */
     public function run()
     {
-        // Wipe the table clean before populating
-        DB::table('{{models}}')->truncate();
+        $faker = Faker::create();
 
-        ${{models}} = array(
+        foreach(range(1, 10) as $index) {
+            $MODEL$::create([
 
-        );
-
-        // Run the seeder
-        DB::table('{{models}}')->insert(${{models}});
+            ]);
+        }
     }
 }

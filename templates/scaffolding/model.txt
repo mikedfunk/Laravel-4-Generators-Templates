@@ -1,5 +1,7 @@
 <?php
 /**
+ * Description
+ *
  * @package MyPackage
  * @copyright 2014 Internet Brands, Inc. All Rights Reserved.
  */
@@ -10,19 +12,22 @@ namespace My\Namespace\Here;
  *
  * @author Michael Funk <mfunk@internetbrands.com>
  */
-class {{className}} extends Eloquent {
-
-    /**
-     * which fields to allow filling
-     *
-     * @var array
-     */
-    protected $fillable = array();
+class $NAME$ extends \Eloquent
+{
 
     /**
      * validation rules
      *
      * @var array
      */
-    public static $rules = array({{rules}});
+    public static $rules = [
+        // 'title' => 'required'
+    ];
+
+    /**
+     * whitelist
+     *
+     * @var array
+     */
+    protected $fillable = [];
 }

@@ -1,9 +1,0 @@
-    /**
-     * Migrate up to this version
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::drop('{{tableName}}');
-    }

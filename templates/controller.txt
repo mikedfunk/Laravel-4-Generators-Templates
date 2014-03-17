@@ -1,5 +1,7 @@
 <?php
 /**
+ * Description
+ *
  * @package MyPackage
  * @copyright 2014 Internet Brands, Inc. All Rights Reserved.
  */
@@ -10,7 +12,7 @@ namespace My\Namespace\Here;
  *
  * @author Michael Funk <mfunk@internetbrands.com>
  */
-class {{className}} extends BaseController 
+class $NAME$ extends \BaseController 
 {
 
     /**
@@ -20,7 +22,7 @@ class {{className}} extends BaseController
      */
     public function index()
     {
-        return View::make('{{collection}}.index');
+        //
     }
 
     /**
@@ -30,7 +32,7 @@ class {{className}} extends BaseController
      */
     public function create()
     {
-        return View::make('{{collection}}.create');
+        //
     }
 
     /**
@@ -51,7 +53,7 @@ class {{className}} extends BaseController
      */
     public function show($id)
     {
-        return View::make('{{collection}}.show');
+        //
     }
 
     /**
@@ -62,7 +64,7 @@ class {{className}} extends BaseController
      */
     public function edit($id)
     {
-        return View::make('{{collection}}.edit');
+        //
     }
 
     /**
